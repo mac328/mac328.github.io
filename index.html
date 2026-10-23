@@ -56,9 +56,36 @@
         padding: 18px 20px;
         margin-bottom: 12px;
       }
+      .app .head {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      .app .icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 14px;
+        flex: none;
+      }
       .app h3 {
         font-size: 18px;
         margin: 0 0 2px;
+      }
+      .shots {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        margin: 0 -20px 12px;
+        padding: 0 20px 6px;
+        scroll-snap-type: x proximity;
+      }
+      .shots img {
+        height: 240px;
+        width: auto;
+        flex: none;
+        border-radius: 10px;
+        border: 1px solid var(--line);
+        scroll-snap-align: start;
       }
       .app .kind {
         font-size: 13px;
@@ -90,19 +117,60 @@
   <body>
     <div class="wrap">
       <h1>328 Studio</h1>
-      <p class="lead">学習アプリをメインに作っています。</p>
+      <p class="lead">学習アプリや脳トレのアプリを作っています。</p>
 
       <h2>提供中のアプリ</h2>
 
       <div class="app">
-        <div class="kind">英検準2級</div>
-        <h3>反復トレ</h3>
+        <div class="head">
+          <img class="icon" src="images/eiken/icon.webp" alt="" />
+          <div>
+            <div class="kind">英検準2級</div>
+            <h3>反復トレ</h3>
+          </div>
+        </div>
         <p>忘れた頃にまた出る。くり返して身につける学習アプリ。</p>
+        <div class="shots">
+          <img src="images/eiken/1.webp" width="135" height="240" loading="lazy" alt="単語から面接まで、これ一つで" />
+          <img src="images/eiken/2.webp" width="135" height="240" loading="lazy" alt="試験日までの毎日を、ひと目で" />
+          <img src="images/eiken/3.webp" width="135" height="240" loading="lazy" alt="4択でテンポよく、単語300語" />
+          <img src="images/eiken/4.webp" width="135" height="240" loading="lazy" alt="間違えたときこそ、力がつく" />
+          <img src="images/eiken/5.webp" width="135" height="240" loading="lazy" alt="覚え方まで、390語ぶん" />
+          <img src="images/eiken/6.webp" width="135" height="240" loading="lazy" alt="音声2078本、ぜんぶ端末の中に" />
+          <img src="images/eiken/7.webp" width="135" height="240" loading="lazy" alt="配点最大の英作文を、型で覚える" />
+        </div>
         <div class="links">
           <a href="https://play.google.com/store/apps/details?id=com.mac328.eikendojo"
             >Google Play</a
           >
           <a href="https://mac328.github.io/eiken-dojo/privacy.html"
+            >プライバシーポリシー</a
+          >
+        </div>
+      </div>
+
+      <div class="app">
+        <div class="head">
+          <img class="icon" src="images/barabaraquiz/icon.webp" alt="" />
+          <div>
+            <div class="kind">かんたん脳トレ！</div>
+            <h3>バラバラ問題文クイズ</h3>
+          </div>
+        </div>
+        <p>文字がバラバラになった問題文を、すばやく読み取って5秒で答える2択クイズ。</p>
+        <div class="shots">
+          <img src="images/barabaraquiz/1.webp" width="135" height="240" loading="lazy" alt="出題の画面" />
+          <img src="images/barabaraquiz/2.webp" width="135" height="240" loading="lazy" alt="答えの画面" />
+          <img src="images/barabaraquiz/3.webp" width="135" height="240" loading="lazy" alt="結果の画面" />
+          <img src="images/barabaraquiz/4.webp" width="240" height="240" loading="lazy" alt="共有する結果の画像" />
+          <img src="images/barabaraquiz/5.webp" width="135" height="240" loading="lazy" alt="ホームの画面" />
+          <img src="images/barabaraquiz/6.webp" width="135" height="240" loading="lazy" alt="遊んだあとのホーム" />
+        </div>
+        <div class="links">
+          <a href="https://play.google.com/store/apps/details?id=com.mac328.barabaraquiz"
+            >Google Play</a
+          >
+          <a href="https://mac328.github.io/barabaraquiz/privacy.html"
             >プライバシーポリシー</a
           >
         </div>
